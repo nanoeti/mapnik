@@ -24,6 +24,7 @@
 #define MAPNIK_TEXT_PLACEMENTS_SIMPLE_HPP
 
 // mapnik
+#include <mapnik/config.hpp>
 #include <mapnik/text/placements/base.hpp>
 
 namespace mapnik {
@@ -33,7 +34,7 @@ class feature_impl;
 struct attribute;
 
 // Automatically generates placement options from a user selected list of directions and text sizes.
-class text_placements_simple: public text_placements
+class MAPNIK_DECL text_placements_simple: public text_placements
 {
 public:
     text_placements_simple(symbolizer_base::value_type const& positions);
